@@ -40,22 +40,22 @@ export default {
         {
           icon: "Group 1000002025.png",
           title: "Software Design and Development",
-          img: "Rectangle 4806.png",
+          img: "one.png",
         },
         {
           icon: "Group 1000002025.png",
           title: "Application Security",
-          img: "Rectangle 4808.png",
+          img: "two.png",
         },
         {
           icon: "Group 1000002025.png",
           title: "Penetration Testing",
-          img: "Rectangle 4810.png",
+          img: "three.png",
         },
         {
           icon: "Group 1000002025.png",
           title: "Compliance Assistance",
-          img: "Rectangle 4812.png",
+          img: "four.png",
         },
       ],
     };
