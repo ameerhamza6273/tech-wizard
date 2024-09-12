@@ -4,37 +4,27 @@
       <h1 class="text-headingclr text-4xl font-bold font-bevietnam text-center">
         Our Services
       </h1>
-      <p
-        class="font-bevietnam text-center max-w-[1200px] mx-auto mt-6 font-normal text-lg text-textcolor"
-      >
-        Lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames
-        faucibus eget maecenas egestas posuere. Lorem ipsum dolor sit amet
-        consectetur. Augue curabitur et elit fames faucibus eget maecenas
-        egestas posuere.
+      <p class="font-bevietnam text-center max-w-[1200px] mx-auto mt-6 font-normal text-lg text-textcolor">
+        "Tech wizard lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas
+        egestas posuere. Tech wizard lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget
+        maecenas egestas posuere."
       </p>
       <hr class="bg-[#CFCFCF] mt-10" />
-      <div
-        class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20"
-      >
-        <div
-          v-for="(card, index) in serviseCards"
-          :key="index"
-          class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"
-          @click="$router.push('/services')"
-        >
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20">
+        <div v-for="(card, index) in serviseCards" :key="index" class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"
+          @click="$router.push('/services')">
           <div class="flex justify-between px-3 py-2 items-center">
-            <h2 class="text-xl font-bold font-bevietnam text-cardheadingclr">
+            <h2 class="text-xl font-bold font-bevietnam text-cardheadingclr max-w-[165px]">
               {{ card.title }}
             </h2>
-            <img :src="card.icon" alt="user" class="h-14" />
+            <img :src="card.icon" alt="user" class="h-12" />
           </div>
           <img :src="card.img" alt="user" class="mt-3 w-full" />
         </div>
       </div>
       <button
-        class="bg-navbgcolor font-bevietnam rounded px-4 py-2 flex text-white mx-auto mt-12 font-bold text-sm items-center hover:opacity-85"
-        @click="$router.push('/services')"
-      >
+        class="bg-navbgcolor font-bevietnam rounded px-4 py-2 flex text-white mx-auto mt-12 font-medium text-md items-center hover:opacity-85"
+        @click="$router.push('/services')">
         View More<img src="Arrow 4.png" alt="user" class="ml-2 h-3.5" />
       </button>
     </div>
@@ -49,22 +39,22 @@ export default {
       serviseCards: [
         {
           icon: "Group 1000002025.png",
-          title: "Embroidery Digitizing",
+          title: "Software Design and Development",
           img: "Rectangle 4806.png",
         },
         {
           icon: "Group 1000002025.png",
-          title: "Embroidery Digitizing",
+          title: "Application Security",
           img: "Rectangle 4808.png",
         },
         {
           icon: "Group 1000002025.png",
-          title: "Embroidery Digitizing",
+          title: "Penetration Testing",
           img: "Rectangle 4810.png",
         },
         {
           icon: "Group 1000002025.png",
-          title: "Embroidery Digitizing",
+          title: "Compliance Assistance",
           img: "Rectangle 4812.png",
         },
       ],

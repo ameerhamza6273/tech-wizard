@@ -28,7 +28,9 @@ export default {
 <style scoped>
 /* Add any additional styling here */
 .contact-main {
-  background-image: url("/public/Rectangle 4821 (1).png");
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/Rectangle 4821 (1).png");
   background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>

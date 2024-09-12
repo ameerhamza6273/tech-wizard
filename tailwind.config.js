@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         themebgcolor: "#F2F6FA",
         navbgcolor: "#1e6ef9",
+        bgcolor: "#1661d2",
         headingclr: "#333333",
         cardheadingclr: "#454545",
         textcolor: "#333333",

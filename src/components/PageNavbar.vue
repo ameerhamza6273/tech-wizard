@@ -3,7 +3,7 @@
     <nav class="bg-white w-full start-0 border-t-8 border-navbgcolor shadow-lg fixed top-0 z-20">
       <div class="max-w-screen-xl flex items-center justify-between mx-auto p-1  lg:px-6 px-4">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="TECH.png" alt="user" class="md:w-44  h-20" />
+          <img src="TECH.png" alt="user" class="md:w-36  h-20" />
         </a>
 
         <div class="md:hidden">

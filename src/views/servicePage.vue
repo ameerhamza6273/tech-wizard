@@ -2,8 +2,6 @@
   <div class="pt-20">
     <!-- hero section -->
     <heroSection />
-    <!-- download section -->
-    <downloadSection />
     <!-- call To Action section is here -->
     <callToActionSection />
   </div>
@@ -11,14 +9,12 @@
 
 <script>
 import heroSection from "@/components/servicePageSections/ServiceHero.vue";
-import downloadSection from "@/components/servicePageSections/DownloadSection.vue";
 import callToActionSection from "@/components/CallToActionSection.vue";
 
 export default {
   name: "servicePage",
   components: {
     heroSection,
-    downloadSection,
     callToActionSection,
   },
   data() {
