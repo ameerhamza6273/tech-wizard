@@ -27,7 +27,7 @@
             </li>
           </ul>
          </div>
-          <button type="button" class="px-3 py-2 text-md hidden md:block border-navbgcolor font-medium text-center text-white bg-navbgcolor rounded-lg hover:bg-blue-600 focus:ring-4  ">Get a Quote</button>
+          <button type="button" class="px-3 py-2 text-md hidden md:block  font-medium text-center text-white bg-navbgcolor rounded-lg hover:bg-black ">Get a Quote</button>
       </div>
     </nav>
     <!-- mobile navbar -->

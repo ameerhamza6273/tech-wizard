@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-bgcolor p-3">
+  <div class="bg-black p-3">
     <div class="max-w-[1200px] mx-auto">
       <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-14">
         <div class="md:col-span-2">
-          <img src="TECH.png" alt="user" class="w-28" />
+          <img src="Asset.svg" alt="user" class="w-28" />
           <p class="text-white text-base font-bevietnam opacity-[0.7] mt-4 md:pr-5">
             Lorem ipsum dolor sit amet consectetur. Mollis aenean vitae sed
             tincidunt bibendum mattis sed turpis. Dignissim ipsum eu et eget
