@@ -1,17 +1,17 @@
 <template>
   <div class="bg-themebgcolor px-3 pb-16">
     <div class="grid grid-cols-7 gap-14 max-w-[1200px] mx-auto">
-      <div class="bg-white md:col-span-5 col-span-7 px-6 py-10">
+      <div class="bg-white md:col-span-5 col-span-7 px-6 py-10 wow animate__animated animate__fadeInLeft">
         <form @submit.prevent="CotactForm">
 
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-[#333] font-light text-lg">Full Name*</label><br />
+              <label class="font-bevietnam text-headingclr font-light text-lg">Full Name*</label><br />
               <input type="text" placeholder="Enter Your Full Name" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
                 required />
             </div>
             <div>
-              <label class="font-bevietnam text-[#333] font-light text-lg">Email*</label><br />
+              <label class="font-bevietnam text-headingclr font-light text-lg">Email*</label><br />
               <input type="email" placeholder="Enter Your Email" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
                 required />
             </div>
@@ -19,18 +19,18 @@
 
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-[#333] font-light text-lg">Phone Number*</label><br />
+              <label class="font-bevietnam text-headingclr font-light text-lg">Phone Number*</label><br />
               <input type="number" placeholder="Enter Your Phone Number"
                 class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
             <div>
-              <label class="font-bevietnam text-[#333] font-light text-lg">Subject*</label><br />
+              <label class="font-bevietnam text-headingclr font-light text-lg">Subject*</label><br />
               <input type="text" placeholder="Subject" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
                 required />
             </div>
           </div>
 
-          <label class="font-bevietnam text-[#333] font-light text-lg">Message*</label><br />
+          <label class="font-bevietnam text-headingclr font-light text-lg">Message*</label><br />
           <textarea type="text" placeholder="Type Message Here" class="bg-themebgcolor px-4 py-3 mt-2 w-full h-40"
             required></textarea>
           <button
@@ -39,7 +39,7 @@
           </button>
         </form>
       </div>
-      <div class="bg-white md:col-span-2 col-span-7 flex flex-col px-6 divide-y">
+      <div class="bg-white md:col-span-2 col-span-7 flex flex-col px-6 divide-y wow animate__animated animate__fadeInRight">
         <div class="py-6">
           <img src="music.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
@@ -68,6 +68,8 @@
 </template>
 
 <script>
+import WOW from 'wow.js'; // Import WOW.js
+import 'animate.css'; // Import Animate.css
 import axios from "axios";
 export default {
   name: "contactFormSection",
@@ -103,5 +105,9 @@ export default {
       }
     },
   },
+  mounted() {
+    // Initialize WOW.js
+    new WOW().init();
+  }
 };
 </script>

@@ -6,8 +6,8 @@
       </h1>
      
       <hr class="bg-[#CFCFCF] mt-10" />
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20">
-        <div v-for="(card, index) in serviseCards" :key="index" class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"
+      <div class=" grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20">
+        <div v-for="(card, index) in serviseCards" :key="index" class="bg-white wow animate__animated animate__zoomIn rounded-xl p-3 shadow-lg cursor-pointer"
           @click="$router.push('/services')">
           <div class="flex justify-between px-3 py-2 items-center">
             <h2 class="text-xl font-bold font-bevietnam text-cardheadingclr max-w-[165px]">
@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import WOW from 'wow.js'; // Import WOW.js
+import 'animate.css'; // Import Animate.css
 export default {
   name: "serviseSection",
   data() {
@@ -56,5 +58,9 @@ export default {
       ],
     };
   },
+  mounted() {
+    // Initialize WOW.js
+    new WOW().init();
+  }
 };
 </script>

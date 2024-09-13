@@ -10,13 +10,15 @@
       </h1>
      
     </div>
-    <p class="text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto pt-16">
+    <p class="wow animate__animated animate__zoomIn text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto pt-16">
       Ready to elevate your technology solutions? Contact Tech Wizard today to learn more about how we can help your organization build and secure its software, ensuring compliance and protecting against threats.
     </p>
   </div>
 </template>
 
 <script>
+import WOW from 'wow.js'; // Import WOW.js
+import 'animate.css'; // Import Animate.css
 export default {
   name: "contactHeroSection",
   data() {
@@ -25,6 +27,10 @@ export default {
     };
   },
   methods: {},
+  mounted() {
+    // Initialize WOW.js
+    new WOW().init();
+  }
 };
 </script>
 

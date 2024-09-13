@@ -7,7 +7,7 @@
 
             <hr class="bg-[#CFCFCF] mt-10" />
             <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-16">
-                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg ">
+                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInLeft">
                     <img src="Expertise.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
                         Expertise
@@ -16,7 +16,7 @@
                         Our team comprises industry experts with years of experience in software development, security, and compliance.
                     </p>
                 </div>
-                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg ">
+                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInRight">
                     <img src="Customized Solutions.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
                         Customized Solutions
@@ -25,7 +25,7 @@
                         We tailor our services to meet the unique needs of each client.
                     </p>
                 </div>
-                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg ">
+                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInUp">
                     <img src="Security First.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
                         Security First
@@ -34,7 +34,7 @@
                         We prioritize the security of your applications and data in every project we undertake.
                     </p>
                 </div>
-                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg ">
+                <div class="bg-themebgcolor rounded-xl p-3 shadow-lg wow animate__animated animate__fadeInDown">
                     <img src="Continuous Support.svg" alt="user" class="w-28 mx-auto block" />
                     <h2 class="text-2xl text-center font-bold font-bevietnam text-cardheadingclr">
                         Continuous Support
@@ -50,6 +50,8 @@
 </template>
 
 <script>
+import WOW from 'wow.js'; // Import WOW.js
+import 'animate.css'; // Import Animate.css
 export default {
     name: "serviseSection",
     data() {
@@ -57,5 +59,9 @@ export default {
             //   
         };
     },
+    mounted() {
+    // Initialize WOW.js
+    new WOW().init();
+  }
 };
 </script>
