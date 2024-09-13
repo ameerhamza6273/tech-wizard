@@ -1,6 +1,6 @@
 <template>
   <div class="bg-themebgcolor py-16">
-    <section class="max-w-[1200px] mx-auto bg-white">
+    <section class="max-w-[1200px] md:mx-auto bg-white mx-2">
     <div class=" md:p-12 p-6 mx-4">
       <h1 class="text-navbgcolor text-4xl font-bold font-bevietnam text-center">
         Call to Action
