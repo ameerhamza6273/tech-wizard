@@ -10,6 +10,9 @@
       </h1>
      
     </div>
+    <p class="text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto pt-16">
+      Ready to elevate your technology solutions? Contact Tech Wizard today to learn more about how we can help your organization build and secure its software, ensuring compliance and protecting against threats.
+    </p>
   </div>
 </template>
 

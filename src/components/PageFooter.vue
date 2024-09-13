@@ -5,7 +5,7 @@
         <div class="md:col-span-2">
           <img src="Asset.svg" alt="user" class="w-28" />
           <p class="text-white text-base font-bevietnam opacity-[0.7] mt-4 md:pr-5">
-            Empowering your tech journey with innovation and expertise.
+            Tech Wizard - Building and Securing the Future of Technology.
           </p>
         </div>
         <div>

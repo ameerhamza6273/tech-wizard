@@ -6,6 +6,9 @@
     <!-- servise section is here -->
     <serviseSection />
  
+    <!-- why chose section is here -->
+    <WhyChose />
+
     <!-- call To Action section is here -->
     <callToActionSection />
   </div>
@@ -14,12 +17,14 @@
 <script>
 import heroSection from "@/components/homePageSections/HeroSection.vue";
 import serviseSection from "@/components/homePageSections/ServiseSection.vue";
+import WhyChose from "@/components/homePageSections/WhyChose.vue";
 import callToActionSection from "@/components/CallToActionSection.vue";
 export default {
   name: "homePage",
   components: {
     heroSection,
     serviseSection,
+    WhyChose,
     callToActionSection,
   },
   data() {
