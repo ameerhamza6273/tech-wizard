@@ -4,11 +4,7 @@
       <h1 class="text-headingclr text-4xl font-bold font-bevietnam text-center">
         Our Services
       </h1>
-      <p class="font-bevietnam text-center max-w-[1200px] mx-auto mt-6 font-normal text-lg text-textcolor">
-        "Tech wizard lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget maecenas
-        egestas posuere. Tech wizard lorem ipsum dolor sit amet consectetur. Augue curabitur et elit fames faucibus eget
-        maecenas egestas posuere."
-      </p>
+     
       <hr class="bg-[#CFCFCF] mt-10" />
       <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-20">
         <div v-for="(card, index) in serviseCards" :key="index" class="bg-white rounded-xl p-3 shadow-lg cursor-pointer"

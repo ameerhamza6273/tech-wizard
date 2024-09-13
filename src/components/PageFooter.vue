@@ -5,10 +5,7 @@
         <div class="md:col-span-2">
           <img src="Asset.svg" alt="user" class="w-28" />
           <p class="text-white text-base font-bevietnam opacity-[0.7] mt-4 md:pr-5">
-            Lorem ipsum dolor sit amet consectetur. Mollis aenean vitae sed
-            tincidunt bibendum mattis sed turpis. Dignissim ipsum eu et eget
-            sit. Lectus lectus vitae amet sapien aliquam. Ullamcorper quis enim
-            commodo faucibus dui.
+            Empowering your tech journey with innovation and expertise.
           </p>
         </div>
         <div>
@@ -35,17 +32,16 @@
           <ul class="text-white text-sm font-bevietnam opacity-[0.7]">
             <li class="mt-2 flex">
               <img src="icon.png" alt="user" class="h-4" />
-              <a class="ml-3">123456789</a>
+              <a class="ml-3">...</a>
             </li>
             <li class="mt-3 flex">
               <img src="mail.png" alt="user" class="h-4" />
-              <a class="ml-3">info@gmail.co.uk</a>
+              <a class="ml-3">...</a>
             </li>
             <li class="mt-3 flex">
               <img src="map-marker.png" alt="user" class="h-4" />
               <a class="ml-3"
-                >Lorem ipsum dolor sit amet consectetur. Leo scelerisque
-                fermentum mi viverra sed in risus.</a
+                >...</a
               >
             </li>
           </ul>
