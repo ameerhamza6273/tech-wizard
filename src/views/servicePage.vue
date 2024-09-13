@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-20">
+  <div class="md:pt-20 pt-16">
     <!-- hero section -->
     <heroSection />
     <!-- cards is here -->

@@ -2,7 +2,7 @@
 <template>
   <div class="bg-themebgcolor pb-20">
     <!-- service section -->
-    <div class="contact-main md:py-48 py-24">
+    <div class="contact-main md:py-48 py-20">
       <h1
         class="font-bevietnam text-center font-bold md:text-5xl text-xl text-white"
       >
@@ -29,7 +29,7 @@ export default {
 /* Add any additional styling here */
 .contact-main {
   background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url("/public/Rectangle 4821 (1).png");
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }

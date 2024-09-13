@@ -3,7 +3,7 @@
     <nav class="bg-white w-full start-0 border-t-8 border-navbgcolor shadow-lg fixed top-0 z-20">
       <div class="max-w-screen-xl flex items-center justify-between mx-auto p-1  lg:px-6 px-4">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="TECH.png" alt="user" class="md:w-36  h-20" />
+          <img src="TECH.png" alt="user" class="md:w-36   w-20" />
         </a>
 
         <div class="md:hidden">
@@ -12,7 +12,7 @@
             @click="toggle">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="#00A2D3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
