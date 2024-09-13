@@ -9,7 +9,7 @@
                     </div>
                     <div class="lg:pl-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
-                            Software Design and Development
+                            <span class="text-headingblue">Software Design</span> and Development
                         </h2>
                         <p class="font-bevietnam mt-4 font-normal text-lg text-textcolor">
                             At Tech Wizard, we believe that effective software is the cornerstone of any successful
@@ -57,7 +57,7 @@
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
                     <div class="lg:pr-2 lg:order-1 order-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
-                            Application Security
+                            <span class="text-headingblue">Application</span>  Security
                         </h2>
                         <p class="font-bevietnam mt-4 font-normal text-lg text-textcolor">
                             In today’s digital landscape, security is paramount. Tech Wizard provides comprehensive
@@ -105,7 +105,7 @@
                     </div>
                     <div class="lg:pl-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
-                            Penetration Testing
+                            <span class="text-headingblue">Penetration</span> Testing
                         </h2>
                         <p class="font-bevietnam mt-4 font-normal text-lg text-textcolor">
                             Understanding your system's vulnerabilities before they can be exploited is crucial. Tech
@@ -147,7 +147,7 @@
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
                     <div class="lg:pr-2 lg:order-1 order-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
-                            Compliance Assistance
+                            <span class="text-headingblue">Compliance</span> Assistance
                         </h2>
                         <p class="font-bevietnam mt-4 font-normal text-lg text-textcolor">
                             Navigating the complex landscape of regulatory requirements can be challenging. Tech Wizard

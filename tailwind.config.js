@@ -14,6 +14,7 @@ module.exports = {
         navbgcolor: "#1e6ef9",
         bgcolor: "#1661d2",
         headingclr: "#000",
+        headingblue: "#1563e9",
         cardheadingclr: "#000",
         textcolor: "#333333",
         borderclr: "#F1F1F3",
