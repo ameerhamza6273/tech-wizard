@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="">
         <!-- cards -->
-        <section class="bg-themebgcolor py-20 mt-20">
+        <section class="bg-themebgcolor px-2 py-20 mt-20">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
                     <div class="lg:pr-2">
@@ -52,10 +52,10 @@
                 </div>
             </div>
         </section>
-        <section class="py-20 ">
+        <section class="py-20 px-2">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
-                    <div class="lg:pr-2">
+                    <div class="lg:pr-2 lg:order-1 order-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
                             Application Security
                         </h2>
@@ -91,13 +91,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:pl-2">
+                    <div class="lg:pl-2  lg:order-2 order-1">
                         <img src="big-2.png" alt="user" class="w-full" />
                     </div>
                 </div>
             </div>
         </section>
-        <section class="bg-themebgcolor py-20">
+        <section class="bg-themebgcolor px-2 py-20">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
                     <div class="lg:pr-2">
@@ -142,10 +142,10 @@
                 </div>
             </div>
         </section>
-        <section class="py-20 ">
+        <section class="py-20 px-2">
             <div class="max-w-[1200px] mx-auto">
                 <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-5 px-2 items-center">
-                    <div class="lg:pr-2">
+                    <div class="lg:pr-2 lg:order-1 order-2">
                         <h2 class="text-black text-4xl font-bold font-bevietnam">
                             Compliance Assistance
                         </h2>
@@ -177,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:pl-2">
+                    <div class="lg:pl-2 lg:order-2 order-1">
                         <img src="big-4.png" alt="user" class="w-full" />
                     </div>
                 </div>
