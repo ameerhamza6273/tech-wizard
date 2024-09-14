@@ -3,8 +3,6 @@
     <!-- hero section & about section -->
     <heroSection />
     
-   
-
     <!-- servise section is here -->
     <serviseSection />
  
@@ -21,7 +19,6 @@ import heroSection from "@/components/homePageSections/HeroSection.vue";
 import CountingSec from "@/components/homePageSections/CountingSec.vue";
 import serviseSection from "@/components/homePageSections/ServiseSection.vue";
 import WhyChose from "@/components/homePageSections/WhyChose.vue";
-import callToActionSection from "@/components/CallToActionSection.vue";
 export default {
   name: "homePage",
   components: {
@@ -29,7 +26,6 @@ export default {
     CountingSec,
     serviseSection,
     WhyChose,
-    callToActionSection,
 
   },
   data() {
