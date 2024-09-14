@@ -12,15 +12,15 @@
           <h2 class="text-lg font-bevietnam text-white font-semibold">
             Our Links
           </h2>
-          <ul class="text-white text-sm font-bevietnam opacity-[0.7]">
+          <ul class="text-white text-sm font-bevietnam opacity-[0.7] cursor-pointer">
             <li class="mt-2">
-              <a>Home</a>
+              <a href="/">Home</a>
             </li>
             <li class="mt-2">
-              <a>Our Services</a>
+              <a href="services">Our Services</a>
             </li>
             <li class="mt-2">
-              <a>Contact Us</a>
+              <a href="contact">Contact Us</a>
             </li>
           </ul>
         </div>
