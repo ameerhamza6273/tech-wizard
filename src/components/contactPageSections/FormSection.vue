@@ -1,66 +1,63 @@
 <template>
   <div class="bg-themebgcolor px-3 pb-16">
     <div class="grid grid-cols-7 gap-14 max-w-[1200px] mx-auto">
+      <!-- Contact Form Section -->
       <div class="bg-white md:col-span-5 col-span-7 px-6 py-10 wow animate__animated animate__fadeInLeft">
-        <form @submit.prevent="CotactForm">
-
+        <form @submit.prevent="submitContactForm">
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Full Name*</label><br />
-              <input type="text" placeholder="Enter Your Full Name" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
-                required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.full_name") }}*</label><br />
+              <input v-model="formData.name" type="text" :placeholder="$t('contact.enter_full_name')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Email*</label><br />
-              <input type="email" placeholder="Enter Your Email" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
-                required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.email") }}*</label><br />
+              <input v-model="formData.email" type="email" :placeholder="$t('contact.enter_email')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
           </div>
 
           <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Phone Number*</label><br />
-              <input type="number" placeholder="Enter Your Phone Number"
-                class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.phone_number") }}*</label><br />
+              <input v-model="formData.phone" type="number" :placeholder="$t('contact.enter_phone_number')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
             <div>
-              <label class="font-bevietnam text-headingclr font-light text-lg">Subject*</label><br />
-              <input type="text" placeholder="Subject" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full"
-                required />
+              <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.subject") }}*</label><br />
+              <input v-model="formData.subject" type="text" :placeholder="$t('contact.subject')" class="bg-themebgcolor px-4 py-3 mt-2 mb-6 w-full" required />
             </div>
           </div>
 
-          <label class="font-bevietnam text-headingclr font-light text-lg">Message*</label><br />
-          <textarea type="text" placeholder="Type Message Here" class="bg-themebgcolor px-4 py-3 mt-2 w-full h-40"
-            required></textarea>
-          <button
-            class="bg-navbgcolor font-bevietnam rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:bg-black">
-            Send Message
+          <label class="font-bevietnam text-headingclr font-light text-lg">{{ $t("contact.message") }}*</label><br />
+          <textarea v-model="formData.message" :placeholder="$t('contact.type_message')" class="bg-themebgcolor px-4 py-3 mt-2 w-full h-40" required></textarea>
+
+          <button class="bg-navbgcolor font-bevietnam rounded px-4 py-2 text-white mt-4 font-bold text-sm hover:bg-black">
+            {{ $t("contact.send_message") }}
           </button>
+          <p v-if="successMessage" class="mt-4 text-green-500">{{ successMessage }}</p>
         </form>
       </div>
+
+      <!-- Contact Details Section -->
       <div class="bg-white md:col-span-2 col-span-7 flex flex-col px-6 divide-y wow animate__animated animate__fadeInRight">
         <div class="py-6">
           <img src="music.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Our Contact
+            {{ $t("contact.our_contact") }}
           </h3>
-          <P class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">0333 303 4870</P>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.phone") }}</p>
         </div>
         <div class="py-6">
           <img src="Group 9156.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Mail Us
+            {{ $t("contact.mail_us") }}
           </h3>
-          <P class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">info@privatahealthcare.co.uk</P>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.email_address") }}</p>
         </div>
         <div class="py-6">
           <img src="Group 9023.png" alt="user" class="mx-auto" />
           <h3 class="font-bevietnam text-center text-headingclr font-bold text-2xl mt-2">
-            Our Location
+            {{ $t("contact.our_location") }}
           </h3>
-          <P class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">Brighter Spaces, 7 Hawthorn Lane,
-            Wilmslow, SK9 1AA</P>
+          <p class="font-bevietnam text-center text-[#333] font-light text-lg mt-2">{{ $t("contact.address") }}</p>
         </div>
       </div>
     </div>
@@ -68,45 +65,52 @@
 </template>
 
 <script>
-import WOW from 'wow.js'; // Import WOW.js
-import 'animate.css'; // Import Animate.css
+import WOW from 'wow.js';
+import 'animate.css';
 import axios from "axios";
+
 export default {
   name: "contactFormSection",
   data() {
     return {
-      //
+      formData: {
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      },
+      successMessage: null,
     };
   },
   methods: {
-    async CotactForm() {
+    async submitContactForm() {
       try {
-        const response = await axios.post("/api/contact", {
-          name: "Hamza",
+        const formData = new FormData();
+        formData.append('name', this.formData.name);
+        formData.append('email', this.formData.email);
+        formData.append('phone', this.formData.phone);
+        formData.append('subject', this.formData.subject);
+        formData.append('message', this.formData.message);
+
+        const response = await axios.post("/action.php", formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data', // Make sure this header is set
+          },
         });
 
-        // Log the entire response for inspection
-        console.log("Response:", response);
-
-        // Check if response is defined before accessing data
-        if (response) {
-          console.log("Login successful:", response.data);
+        if (response.data.success) {
+          this.successMessage = "Your message has been sent successfully!";
         } else {
-          console.error("Login failed: No response received");
+          this.successMessage = "Failed to send message. Please try again.";
         }
       } catch (error) {
-        // Log the entire error for inspection
-        console.error("Login failed:", error);
-
-        // Check if error.response is defined before accessing data
-        if (error.response) {
-          console.error("Error response data:", error.response.data);
-        }
+        console.error("Error sending message:", error);
+        this.successMessage = "An error occurred. Please try again.";
       }
-    },
+    }
   },
   mounted() {
-    // Initialize WOW.js
     new WOW().init();
   }
 };
