@@ -93,7 +93,7 @@
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
-                                <p class="text-lg font-bevietnam"><b>{{ $t("network_penetration_testing") }}: </b> {{ $t("network_penetration_testing") }} </p>
+                                <p class="text-lg font-bevietnam"><b>{{ $t("network_penetration_testing") }}: </b> {{ $t("network_penetration_testing_des") }} </p>
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
@@ -133,7 +133,7 @@
                             </div>
                             <div class="flex my-4 items-start">
                                 <img src="Group-1000002024.png" alt="user" class="h-7 mr-3 mt-1" />
-                                <p class="text-lg font-bevietnam"><b> {{ $t("ongoing_monitoring") }}: </b>{{ $t("ongoing_monitoring") }}</p>
+                                <p class="text-lg font-bevietnam"><b> {{ $t("ongoing_monitoring") }}: </b>{{ $t("ongoing_monitoring_des") }}</p>
                             </div>
                         </div>
                     </div>
