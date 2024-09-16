@@ -9,7 +9,7 @@
     <h1
         class="pt-16 font-bevietnam text-center font-bold md:text-5xl text-xl text-black"
       >
-        Contact Us
+        {{ $t("contact_us") }}
       </h1>
     <p class="mt-5 wow animate__animated animate__zoomIn text-lg text-center font-normal font-bevietnam text-textcolor max-w-[1100px] mx-auto ">
       {{ $t("contact_text") }}
