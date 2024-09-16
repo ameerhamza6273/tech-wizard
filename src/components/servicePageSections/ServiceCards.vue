@@ -138,7 +138,7 @@
                         </div>
                     </div>
                     <div class="lg:pl-2 lg:order-2 order-1">
-                        <img src="big-4.png" alt="user" class="w-full" />
+                        <img src="new-s.jpg" alt="user" class="w-full" />
                     </div>
                 </div>
             </div>
@@ -153,23 +153,7 @@ export default {
     name: "ServiceCards",
     data() {
         return {
-            // servises: [
-
-            //   {
-            //     title: "Embroidery Digitizing",
-            //     img: "Rectangle 4808.png",
-            //     priceTitle: "Price",
-            //     price: "$15",
-            //   },
-            //   {
-            //     title: "Embroidery Digitizing",
-            //     img: "Rectangle 4810.png",
-            //     priceTitle: "Price",
-            //     price: "$15",
-            //   },
-
-
-            // ],
+        // 
         };
     },
     mounted() {
